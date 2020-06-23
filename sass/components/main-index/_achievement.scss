@@ -1,0 +1,98 @@
+.achievement {
+  border-bottom: 1px solid $header-border;
+}
+.achievement__title {
+  text-align: center;
+  display: none;
+}
+.competence {
+  @include flexcentered();
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.competence__item {
+  padding-left: 30px;
+
+  &:first-child {
+    padding-left: 0px;
+  }
+
+  &--icon-sputnik::before {
+    content: "";
+    background-image: url(../images/sputnik.svg);
+  }
+
+  &--icon-clock::before {
+    content: "";
+    background-image: url(../images/clock.svg);
+  }
+
+  &--icon-comp::before {
+    content: "";
+    background-image: url(../images/comp.svg);
+  }
+
+  &--icon-astronaut::before {
+    content: "";
+    background-image: url(../images/astronaut.svg);
+  }
+}
+
+.svg-sputnik {
+  width: 70px;
+  height: 70px;
+}
+
+.svg-clock {
+  width: 70px;
+  height: 70px;
+}
+
+.svg-comp {
+  width: 70px;
+  height: 70px;
+}
+
+.svg-astronaut {
+  width: 70px;
+  height: 70px;
+}
+
+.div-icon {
+  @include flexcentered();
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  background-color: $text-button-portfolio;
+  border-radius: 4px;
+}
+
+.competence__image {
+  min-width: 270px;
+  background-color: $text-button-portfolio;
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: $text-blue;
+  }
+}
+
+.competence__label {
+  color: $text-black;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.competence__text {
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0px;
+}

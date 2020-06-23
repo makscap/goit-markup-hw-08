@@ -1,0 +1,9 @@
+.page-header {
+  &__content {
+  }
+  &__nav {
+    @include flexcentered();
+
+    border-bottom: 1px solid $header-border;
+  }
+}

@@ -1,0 +1,100 @@
+/* FOOTER */
+
+.page-footer {
+  background-color: $foot-bg;
+}
+.page-footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 28px;
+}
+.page-footer__logo {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.18;
+  text-decoration: none;
+  margin: 0px;
+  padding-bottom: 10px;
+  color: $text-blue;
+
+  &--color {
+    color: $text-white;
+  }
+}
+
+.page-footer__home {
+}
+.page-footer__item {
+  padding-bottom: 9px;
+}
+.page-footer__text {
+  color: $text-white;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0px;
+}
+.page-footer__contact {
+}
+.page-footer__link {
+  color: $text-grey-opac;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+  margin: 0px;
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: $text-blue;
+  }
+}
+
+/* subscribe */
+.subscribe-section {
+}
+.subscribe__title {
+  color: $text-white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0px;
+  padding-bottom: 21px;
+  text-transform: uppercase;
+}
+.subscribe__input {
+  width: 358px;
+  height: 50px;
+  background-color: $foot-bg;
+  border: 1px solid $border-input;
+  border-radius: 4px;
+  color: $text-white;
+}
+.subscribe__button {
+  @include flexcentered();
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+  background-color: $text-blue;
+  color: $text-white;
+  border-radius: 4px;
+  margin-left: 12px;
+  border: 1px solid $text-blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &--icon::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon-send.svg);
+    background-size: contain;
+    margin-left: 10px;
+  }
+}
+
+.button-div {
+  display: flex;
+}

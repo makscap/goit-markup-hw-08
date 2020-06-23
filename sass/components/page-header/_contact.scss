@@ -1,0 +1,44 @@
+.contact-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-nav__item {
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.contact-nav__link {
+  @include flexcentered();
+  color: $text-grey;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: $text-blue;
+  }
+}
+
+.svg-list {
+  fill: currentColor;
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+.svg-phone {
+  fill: currentColor;
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}

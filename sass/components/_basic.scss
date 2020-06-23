@@ -1,0 +1,32 @@
+body {
+  color: $text-grey;
+  font-family: $text-roboto;
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.color {
+  background-color: $text-button-portfolio;
+}
+.link {
+  text-decoration: none;
+}

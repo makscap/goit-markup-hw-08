@@ -1,0 +1,224 @@
+/* МОДАЛКА */
+
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+  position: relative;
+
+  min-width: 528px;
+
+  text-align: center;
+  background-color: $text-white;
+  color: $text-black;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modal form */
+.modal__topic {
+  margin: 0px;
+  padding-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.modal__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $modal-close;
+
+  background-color: $text-white;
+  /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12); */
+
+  transform: translate(-30%, 30%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-close {
+  width: 11px;
+  height: 11px;
+}
+.form {
+  padding: 40px;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+  color: $text-grey;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0px;
+  padding: 14px 42px;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid $modal-input;
+  outline: none;
+}
+.form-input--comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+.form-input:focus-within {
+  border: 1px solid $text-blue;
+}
+
+.svg-modal {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label--comment {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  transform: translateY(0);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field:focus-within > .form-label--comment {
+  transform: translateY(-35px);
+  color: $text-blue;
+}
+
+.form-input:not(:placeholder-shown) + .form-label--comment {
+  transform: translateY(-35px);
+}
+
+.form-field:focus-within > .svg-modal {
+  fill: $text-blue;
+}
+
+.form-field:focus-within > .form-label {
+  transform: translate(-26px, -45px);
+  color: $text-blue;
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-26px, -45px);
+}
+
+.form-field-checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--text-black);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.checkbox:checked + .icon {
+  border-color: $text-blue;
+  background-color: $text-blue;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0px;
+  padding: 0px;
+  letter-spacing: 0.03em;
+  color: $text-grey;
+}
+.checkbox-link {
+  text-decoration: underline;
+  color: $text-blue;
+}
+
+.modal__button-send {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  color: $text-white;
+  background-color: $text-blue;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

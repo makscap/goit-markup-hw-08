@@ -1,0 +1,17 @@
+.page-header {
+}
+
+.page-header__logo {
+  font-family: $text-raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: inline-block;
+  color: $text-blue;
+
+  &--color {
+    color: $text-black;
+  }
+}

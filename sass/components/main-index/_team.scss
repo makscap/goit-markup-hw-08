@@ -1,0 +1,115 @@
+/* TEAM-COMMAND */
+
+.command {
+  padding-bottom: 94px;
+}
+.command__title {
+  color: $text-black;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 50px;
+}
+.person {
+  display: flex;
+  justify-content: center;
+}
+.person__item {
+  background-color: $text-white;
+
+  text-align: center;
+  padding-bottom: 24px;
+  margin-left: 34px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.person__image {
+  padding-bottom: 30px;
+}
+.person__label {
+  color: $text-black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.person__text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin: 0px;
+  padding-bottom: 28px;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social__item {
+}
+
+.social__link {
+  @include flexcentered();
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $border;
+  @include transition();
+
+  &:hover,
+  &:focus {
+    color: $text-white;
+    background-color: $text-blue;
+  }
+}
+
+.svg-insta {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-faceb {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.svg-twit {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.svg-linked {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-send {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.social__icon {
+  min-width: 20px;
+  padding: 12px;
+
+  &:hover {
+    background-color: $text-blue;
+  }
+}

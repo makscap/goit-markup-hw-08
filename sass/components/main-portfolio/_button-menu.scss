@@ -1,0 +1,37 @@
+/* OPTION MENU */
+.option {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.option__item {
+  margin-left: 8px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.option__button {
+  color: $text-black;
+  background-color: $text-button-portfolio;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+
+  padding: 6px 22px;
+
+  @include transition();
+
+  &:hover,
+  &:focus {
+    background-color: $text-blue;
+    color: $text-white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 3px 1px rgba(0, 0, 0, 0.1);
+  }
+}

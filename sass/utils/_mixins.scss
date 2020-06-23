@@ -1,0 +1,9 @@
+@mixin transition($time: 250ms, $function: cubic-bezier(0.42, 0, 0.58, 1)) {
+  transition-duration: $time;
+  transition-timing-function: $function;
+}
+
+@mixin flexcentered($display: flex, $align: center) {
+  display: $display;
+  align-items: $align;
+}

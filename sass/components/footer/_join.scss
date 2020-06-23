@@ -1,0 +1,78 @@
+/* SECTION JOIN */
+.join {
+}
+.join__title {
+  color: $text-white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0px;
+  padding-bottom: 21px;
+  text-transform: uppercase;
+}
+.join__social {
+  display: flex;
+  justify-content: space-between;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $border;
+}
+.join__item {
+  margin-left: 10px;
+  /* border-radius: 50%;
+  overflow: hidden; */
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.join__link {
+  @include flexcentered();
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $text-white;
+  background-color: $foot-line;
+  @include transition();
+
+  &:hover {
+    color: $text-white;
+    background-color: $text-blue;
+  }
+}
+
+.join__icon {
+  min-width: 20px;
+  padding: 12px;
+  background-color: $foot-line;
+
+  &:hover {
+    background-color: $text-blue;
+  }
+}
+
+.svg-insta {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-faceb {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.svg-twit {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.svg-linked {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
