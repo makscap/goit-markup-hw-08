@@ -62,7 +62,7 @@
   @include flexcentered();
   justify-content: center;
 
-  width: 270px;
+  max-width: 270px;
   height: 120px;
   background-color: $text-button-portfolio;
   border-radius: 4px;

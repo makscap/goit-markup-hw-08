@@ -20,7 +20,6 @@
 }
 .person__item {
   background-color: $text-white;
-
   text-align: center;
   padding-bottom: 24px;
   margin-left: 34px;
@@ -60,8 +59,6 @@
 }
 
 .social__link {
-  @include flexcentered();
-  justify-content: center;
 
   width: 44px;
   height: 44px;

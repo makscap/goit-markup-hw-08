@@ -21,6 +21,10 @@
 }
 .customer__item {
   margin-left: 30px;
+  width: 175px;
+  border: 1px solid $border;
+  border-radius: 4px;
+
 
   &:first-child {
     margin-left: 0px;
@@ -28,13 +32,9 @@
 }
 
 .customer__link {
-  display: flex;
-  align-items: center;
+  @include flexcentered();
   justify-content: center;
-  width: 175px;
   height: 90px;
-  border: 1px solid $border;
-  border-radius: 4px;
   color: $border;
   @include transition();
 
