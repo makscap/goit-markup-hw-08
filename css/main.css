@@ -89,6 +89,7 @@ img {
   padding: 0px;
   background-color: transparent;
   fill: black;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
