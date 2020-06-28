@@ -1,5 +1,9 @@
 /* SECTION JOIN */
 .join {
+
+  @media screen and (max-width: 1170px) {
+    margin-bottom: 60px;
+  }
 }
 .join__title {
   color: $text-white;
@@ -9,9 +13,14 @@
   margin: 0px;
   padding-bottom: 21px;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1170px) {
+    padding-bottom: 20px;
+  }
 }
 .join__social {
   display: flex;
+  justify-content: center;
   // justify-content: space-between;
   // width: 44px;
   // height: 44px;

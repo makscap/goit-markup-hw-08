@@ -1,15 +1,22 @@
 /* OPTION MENU */
 .option {
   display: flex;
-  justify-content: center;
+flex-wrap: wrap;
   padding-top: 94px;
   padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 }
 .option__item {
-  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 
-  &:first-child {
-    margin-left: 0px;
+  &:last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
   }
 }
 

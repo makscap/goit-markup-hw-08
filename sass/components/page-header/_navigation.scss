@@ -1,22 +1,39 @@
 /* MENU-NAVIGATION */
 
 .menu-nav {
+
+  @media screen and (min-width: 768px) {
+
   display: flex;
+  }
+
+  @media screen and (min-width: 1170px) {
   margin-left: 85px;
+}
 }
 
 .menu-nav__item {
-  margin-left: 50px;
+  
+  // padding-bottom: 40px;
 
+  @media screen and (min-width: 768px) {
+  margin-left: 50px;
+  // padding-bottom: 16px;
+  // padding-top: 16px;
+  }
+
+  // @media screen and (min-width: 1170px) {
+  // margin-left: 50px;
+  // }
+  
   &:first-child {
     margin-left: 0px;
   }
 }
 
 .menu-nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: inline-flex;
+  padding-bottom: 8px;
   color: $text-black;
   font-weight: 500;
   font-size: 14px;
@@ -24,9 +41,16 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   @include transition();
+  padding-bottom: 32px;
+  padding-top: 32px;
+  
 
   position: relative;
 
+
+
+
+  // display: block;
   &:hover,
   &:focus {
     color: $text-blue;

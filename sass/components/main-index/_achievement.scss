@@ -1,21 +1,85 @@
 .achievement {
   border-bottom: 1px solid $header-border;
+  display: flex;
+  justify-content: center;
 }
 .achievement__title {
   text-align: center;
   display: none;
 }
+
+
 .competence {
-  @include flexcentered();
   padding-top: 94px;
   padding-bottom: 94px;
-}
+
+  @media screen and (min-width: 480px) {
+    // width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 768px;
+  }
+  
+  @media screen and (min-width: 1170px) {
+      max-width: 1170px;
+      flex-wrap: nowrap;
+
+  }
+
 .competence__item {
-  padding-left: 30px;
+margin-bottom: 30px;
+
+
+@media screen and (min-width: 480px) {
+    width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  width: 354px;
+  // width: calc((100% - 2 * 30px) / 2);
+margin-right: 30px;
+
+}
+
+@media screen and (min-width: 1170px) {
+  width: 270px;
+  margin-bottom: 0px;
+}
 
   &:first-child {
-    padding-left: 0px;
+
+  @media screen and (min-width: 1170px) {
+    margin-left: 0px;
   }
+
+  }
+&:nth-child(2n) {
+
+  @media screen and (max-width: 1170px) {
+    margin-right: 0px;
+  }
+
+}
+
+  &:nth-child(n+3) {
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+
+
+    &:last-child {
+      margin-bottom: 0px;
+      margin-right: 0px;
+    } 
+  }
+
 
   &--icon-sputnik::before {
     content: "";
@@ -61,11 +125,29 @@
 .div-icon {
   @include flexcentered();
   justify-content: center;
+  // width: 450px;
+height: 120px;
 
-  max-width: 270px;
-  height: 120px;
+
+
   background-color: $text-button-portfolio;
   border-radius: 4px;
+
+
+  @media screen and (min-width: 480px) {
+    
+  }
+  
+  @media screen and (min-width: 768px) {
+    // width: 354px;
+
+  }
+  
+  @media screen and (min-width: 1170px) {
+    // width: 270px;
+
+  
+  }
 }
 
 .competence__image {
@@ -90,6 +172,11 @@
   margin: 0px;
   padding-bottom: 10px;
   padding-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
 }
 .competence__text {
   font-size: 14px;

@@ -15,6 +15,9 @@
     ),
     url(../images/Hero-body.jpg);
 
+
+
+    
   // @media screen and (min-width: 480px) {
   //   width: 480px;
   //   height: 400px;
@@ -35,15 +38,17 @@
   padding-bottom: 46px;
   color: $text-white;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
   text-transform: uppercase;
   margin: 0px;
 
-  // @media screen and (min-width: 480px) {
-  //   font-size: 26px;
-  //   line-height: 1.62;
-  // }
+  font-size: 26px;
+line-height: 1.62;
+
+  @media screen and (min-width: 1170px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .page-hero__button {
   display: inline-block;
@@ -68,3 +73,4 @@
     border: 1px solid $text-blue;
   }
 }
+
