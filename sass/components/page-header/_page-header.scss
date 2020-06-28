@@ -32,6 +32,7 @@ align-items: center;
   padding: 0px;
   background-color: transparent;
   border: none;
+  @include transition();
  
   &:focus {
     fill: $text-blue;

@@ -88,6 +88,10 @@ img {
   padding: 0px;
   background-color: transparent;
   border: none;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .menu-button:focus {
