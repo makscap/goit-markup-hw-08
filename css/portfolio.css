@@ -795,7 +795,7 @@ img {
           transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.join__link:hover {
+.join__link:hover, .join__link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }

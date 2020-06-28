@@ -87,7 +87,7 @@ margin-bottom: 0px;
   color: $border;
   @include transition();
 
-  &:hover {
+  &:hover, &:focus {
     color: $text-blue;
     border: 1px solid $text-blue;
   }

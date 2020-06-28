@@ -48,7 +48,7 @@
   background-color: $foot-line;
   @include transition();
 
-  &:hover {
+  &:hover, &:focus {
     color: $text-white;
     background-color: $text-blue;
   }
