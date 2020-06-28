@@ -87,8 +87,11 @@ img {
   margin: 0px;
   padding: 0px;
   background-color: transparent;
-  fill: black;
   border: none;
+}
+
+.menu-button:focus {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
