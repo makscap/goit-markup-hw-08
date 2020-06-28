@@ -95,7 +95,7 @@ img {
           transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-.menu-button:focus {
+.menu-button:hover, .menu-button:focus {
   fill: #2196f3;
 }
 

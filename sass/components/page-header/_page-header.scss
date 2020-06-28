@@ -34,7 +34,7 @@ align-items: center;
   border: none;
   @include transition();
  
-  &:focus {
+  &:hover, &:focus {
     fill: $text-blue;
   }
 
