@@ -2,7 +2,7 @@
 
 .customer {
 
-  @media screen and (max-width: 1170px) {
+  @media screen and (max-width: 1199px) {
   display: flex;
   flex-direction: column;
 
@@ -39,8 +39,8 @@
       max-width: 768px;
   }
   
-  @media screen and (min-width: 1170px) {
-      max-width: 1170px;
+  @media screen and (min-width: 1200px) {
+      max-width: 1200px;
       flex-wrap: nowrap;
   }
 
@@ -54,12 +54,12 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
 margin-bottom: 0px;
 }
 
   &:nth-child(2n) {
-    @media screen and (max-width: 1170px) {
+    @media screen and (max-width: 1199px) {
       margin-right: 0px;
     }
   
@@ -74,7 +74,7 @@ margin-bottom: 0px;
   
 }
 &:last-child {
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
   margin-right: 0px;
 } 
 }
